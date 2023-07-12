@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "0f303f76-a7f4-4343-ad43-959fa67c30d1",
+		"name": "BIBLIOTECA REACT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24811078",
+		"_collection_link": "https://speeding-crescent-323193.postman.co/workspace/My-Workspace~4f512c37-86eb-4897-8e5e-958abe2f4f47/collection/24811078-0f303f76-a7f4-4343-ad43-959fa67c30d1?action=share&creator=24811078&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Fetch all books",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/livros",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"livros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch book bi id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/livros/21",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"livros",
+						"21"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"isbn\": \"978-85943182370\",\r\n    \"nome\": \"O Morro dos Vento\",\r\n    \"editora\": \"Principis\",\r\n    \"ano_publi\": \"2019\",\r\n    \"status\": \"Disponível\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/livros",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"livros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete book by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/livros/28",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"livros",
+						"28"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put book",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"isbn\": \"12345\",\r\n    \"nome\": \"Livro Atualizado\",\r\n    \"editora\": \"Editora Nova\",\r\n    \"ano_publi\": \"2021\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/livros/26",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"livros",
+						"26"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
